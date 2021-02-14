@@ -1,7 +1,7 @@
 Adds auction data received from a javascript call to a persistent queue.
 Shows a counter of auction data.
 
-
+![](screencast.mov)
 
 Built With
 Python
