@@ -3,14 +3,21 @@ import requests
 import time
 import string
 
+
 def ramdom_string():
-    return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(12))
+    return ''.join(
+        random.choice(
+            string.ascii_uppercase +
+            string.digits) for _ in range(12))
+
 
 def random_int():
-    return random.randint(0,3000)
+    return random.randint(0, 3000)
+
 
 def random_flaot():
     return random.uniform(0, 1)
+
 
 def generate_bid():
     return {
@@ -30,13 +37,19 @@ def generate_bid():
         "usesGenericKeys": random.choice([True, False]),
         "size": f"{random_int()}x{random_int()}",
         "adserverTargeting": {
-          "hb_bidder": ramdom_string(),
-          "hb_adid": ramdom_string(),
-          "hb_pb": random_flaot()
+            "hb_bidder": ramdom_string(),
+            "hb_adid": ramdom_string(),
+            "hb_pb": random_flaot()
         }
     }
 
+
 if __name__ == "__main__":
     while True:
-        requests.post('http://localhost:5000/auction', generate_bid())
-        time.sleep(3.0)
+        try:
+            r = requests.post('http://localhost:5000/auction', generate_bid())
+            if r.status_code != 200:
+                raise Exception(f"Status code {r.status_code}")
+        except Exception as e:
+            print(f"Error sending auction data. Status code {e}")
+        time.sleep(0.7)
