@@ -1,7 +1,7 @@
 Adds auction data received from a javascript call to a persistent queue.
 Shows a counter of auction data.
 
-
+[Screencast](https://youtu.be/_lWwOujVkqo)
 
 Built With
 Python
@@ -9,11 +9,11 @@ React
 EventSource
 
 ### Built With
-
-* [Python](https://getbootstrap.com)
-* [React](https://jquery.com)
-* [EventSource](https://laravel.com)
-* [Flask](https://laravel.com)
+* [Python](https://www.python.org/)
+* [React](https://reactjs.org/)
+* [EventSource](https://developer.mozilla.org/en-US/docs/Web/API/EventSource)
+* [Flask](https://palletsprojects.com/p/flask/)
+* [Docker](https://www.docker.com/)
 
 ### Prerequisites
 
