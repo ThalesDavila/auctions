@@ -1,6 +1,4 @@
-import './App.css';
-
-import Counter from './auctions/Counter.js'
+import Counter from './auctions/counter.js'
 
 function App() {
   return (<Counter />)
