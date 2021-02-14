@@ -1,9 +1,7 @@
 Adds auction data received from a javascript call to a persistent queue.
 Shows a counter of auction data.
 
-<video width="320" height="240" controls>
-  <source src="screencast.mov" type="video/mp4">
-</video>
+[screencast runing the test](https://youtu.be/_lWwOujVkqo)
 
 Built With
 Python
