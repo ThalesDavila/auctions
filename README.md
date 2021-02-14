@@ -1,7 +1,7 @@
 Adds auction data received from a javascript call to a persistent queue.
 Shows a counter of auction data.
 
-[screencast runing the test](https://youtu.be/_lWwOujVkqo)
+[Screencast](https://youtu.be/_lWwOujVkqo)
 
 Built With
 Python
