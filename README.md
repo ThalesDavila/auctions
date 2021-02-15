@@ -11,6 +11,7 @@ EventSource
 ### Built With
 * [Python](https://www.python.org/)
 * [React](https://reactjs.org/)
+* [Redis](https://redis.io/)
 * [EventSource](https://developer.mozilla.org/en-US/docs/Web/API/EventSource)
 * [Flask](https://palletsprojects.com/p/flask/)
 * [Docker](https://www.docker.com/)
