@@ -46,6 +46,7 @@ def generate_bid():
 
 if __name__ == "__main__":
     while True:
+        # send new mock auction data to queue with a post request every 0.7 seconds
         try:
             r = requests.post('http://localhost:5000/auction', generate_bid())
             if r.status_code != 200:
