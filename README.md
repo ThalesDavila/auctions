@@ -1,3 +1,4 @@
+## Part 1
 Adds auction data received from a javascript call to a persistent queue.
 Shows a counter of auction data.
 
@@ -52,13 +53,11 @@ EventSource
 4. Run the auctions data requests mock
    ```sh
    python python mock_auction.py
+   
+## Part 2
+System architecture diagram 
+![Screenshot](diagram.png)
 
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-  
-   
-
-
-
